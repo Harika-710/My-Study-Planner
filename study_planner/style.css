@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    padding: 45px 15px;
+    background: #eee9f7;
+    color: #3f3150;
+}
+
+/* Main Container */
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    background: #ffffff;
+    padding: 42px;
+    border: 1px solid #ddd3e8;
+    box-shadow: 0 18px 45px rgba(80, 55, 100, 0.14);
+}
+
+/* Header */
+.container h1 {
+    text-align: center;
+    font-size: 38px;
+    color: #553b70;
+    margin-bottom: 8px;
+}
+
+.container > p {
+    text-align: center;
+    color: #8d8098;
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+/* Input Section */
+.task-box {
+    padding: 25px;
+    background: #f5f0fa;
+    border: 1px solid #e1d6eb;
+}
+
+/* Inputs One By One */
+.task-box input,
+.task-box select {
+    display: block;
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    margin-bottom: 13px;
+
+    background: #ffffff;
+    color: #4b3b59;
+
+    border: 1px solid #d7c9e3;
+    outline: none;
+    font-size: 14px;
+}
+
+.task-box input::placeholder {
+    color: #a298a9;
+}
+
+.task-box input:focus,
+.task-box select:focus {
+    border-color: #9a76bd;
+    box-shadow: 0 0 0 3px rgba(154, 118, 189, 0.12);
+}
+
+/* Add Task */
+.task-box button {
+    width: 100%;
+    height: 48px;
+
+    background: #8e6aae;
+    color: #ffffff;
+
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.task-box button:hover {
+    background: #765397;
+}
+
+/* Today's Tasks */
+h3 {
+    margin: 35px 0 18px;
+    color: #553b70;
+    font-size: 23px;
+}
+
+/* Task List */
+#taskList {
+    list-style: none;
+}
+
+/* Each Task */
+#taskList li {
+    width: 100%;
+    padding: 21px;
+    margin-bottom: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #ded4e7;
+    border-left: 5px solid #9a76bd;
+
+    box-shadow: 0 6px 18px rgba(80, 55, 100, 0.08);
+
+    transition: 0.25s;
+}
+
+#taskList li:hover {
+    border-left-color: #765397;
+    box-shadow: 0 9px 23px rgba(80, 55, 100, 0.13);
+}
+
+/* Task Name */
+#taskList li strong {
+    display: block;
+    font-size: 18px;
+    color: #4d3760;
+    margin-bottom: 9px;
+}
+
+/* Date / Time / Priority */
+#taskList li small {
+    display: block;
+    margin-top: 6px;
+    color: #887b94;
+    font-size: 13px;
+}
+
+/* Edit Button */
+#taskList li button {
+    display: block;
+    margin-top: 15px;
+
+    padding: 8px 18px;
+
+    background: #f0e8f7;
+    color: #765397;
+
+    border: 1px solid #d5c5e2;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#taskList li button:hover {
+    background: #8e6aae;
+    color: #ffffff;
+}
+
+/
